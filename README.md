@@ -118,7 +118,7 @@ npm start        # Starts React on http://localhost:3000
 | `PG_DATABASE` | PostgreSQL sandbox database name |
 | `PG_PASSWORD` | PostgreSQL sandbox user password |
 | `PG_PORT` | PostgreSQL port (default: 5432) |
-| `OPENAI_API_KEY` | OpenAI API key for LLM hints |
+| `GEMINI_API_KEY` | Gemini API key for LLM hints |
 
 ### Frontend (`frontend/.env`)
 
