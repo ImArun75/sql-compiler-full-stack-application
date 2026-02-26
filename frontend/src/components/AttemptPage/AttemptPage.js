@@ -14,7 +14,7 @@ export default function AttemptPage() {
 
     useEffect(() => {
         clearWorkspace();
-        api.get(`/assignments/${id}`).then(({ data }) => setAssignment(data.data));
+        api.get(`assignments/${id}`).then(({ data }) => setAssignment(data.data));
     }, [id, setAssignment]);
 
     if (!assignment) return <div>Loading...</div>;

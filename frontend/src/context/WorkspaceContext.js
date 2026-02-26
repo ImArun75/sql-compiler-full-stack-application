@@ -20,7 +20,7 @@ export const WorkspaceProvider = ({ children }) => {
         setLoading(true);
         setError(null);
         try {
-            const { data } = await api.post('/execute', { assignmentId: assignment._id, query });
+            const { data } = await api.post('execute', { assignmentId: assignment._id, query });
             setResults(data);
         } catch (err) {
             setError(err.response?.data?.error || err.message);
@@ -32,7 +32,7 @@ export const WorkspaceProvider = ({ children }) => {
     const getHint = async (query) => {
         setLoading(true);
         try {
-            const { data } = await api.post('/hint', {
+            const { data } = await api.post('hint', {
                 assignmentQuestion: assignment.question,
                 tableSchemas: assignment.tableSchemas,
                 studentQuery: query,

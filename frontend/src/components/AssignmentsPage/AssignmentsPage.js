@@ -10,7 +10,7 @@ export default function AssignmentsPage() {
 
     useEffect(() => {
         clearWorkspace();
-        api.get('/assignments').then(({ data }) => setList(data.data));
+        api.get('assignments').then(({ data }) => setList(data.data));
     }, []);
 
     return (
