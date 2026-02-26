@@ -1,0 +1,157 @@
+:root {
+    --bg: #0b0e14;
+    --surface: #151921;
+    --primary: #c678dd;
+    --text: #abb2bf;
+    --border: #282c34;
+    --header-height: 60px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    color: white;
+    font-weight: 600;
+}
+
+.app__header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--header-height);
+    padding: 0 2rem;
+    background: rgba(21, 25, 33, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+.app__header h1 {
+    margin: 0;
+}
+
+.app__main {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.assignment-card {
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.assignment-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
+.attempt-page__layout {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .attempt-page__layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.panel {
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background: var(--primary);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+th {
+    text-align: left;
+    padding: 0.75rem;
+    color: white;
+    border-bottom: 2px solid var(--border);
+}
+
+td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.hint-panel {
+    border: 1px solid rgba(198, 120, 221, 0.3);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    background: rgba(198, 120, 221, 0.05);
+}
+
+.badge {
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.easy {
+    background: #98c379;
+    color: #1e2227;
+}
+
+.medium {
+    background: #d19a66;
+    color: #1e2227;
+}
+
+.hard {
+    background: #e06c75;
+    color: #1e2227;
+}
