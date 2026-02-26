@@ -11,7 +11,7 @@ A browser-based SQL learning platform where students practice SQL queries agains
 | Persistence DB | MongoDB (Mongoose) |
 | Sandbox DB | PostgreSQL (pg Pool) |
 | SQL Editor | Monaco Editor |
-| LLM Hints | OpenAI GPT-4o-mini |
+| LLM Hints | gemini-2.5-flash |
 
 ## Folder Structure
 
