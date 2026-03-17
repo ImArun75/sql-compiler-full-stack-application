@@ -1,4 +1,4 @@
-# CipherSQLStudio
+# Secure SQL Learning & AI Mentorship Platform
 
 A browser-based SQL learning platform where students practice SQL queries against pre-configured assignments with real-time execution and LLM-powered hints.
 
